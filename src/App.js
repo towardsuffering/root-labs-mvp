@@ -5,17 +5,20 @@ import HomePage from './pages/HomePage';
 import LoginPage from './pages/LoginPage';
 import ShoppingCart from './pages/ShoppingCart';
 import CheckoutPage from './pages/CheckoutPage';
+import Layout from './components/Layout';
 
 const App = () => {
   return (
     <Router>
       <Navbar />
-      <Switch>
-        <Route path="/" exact component={HomePage} />
-        <Route path="/login" component={LoginPage} />
-        <Route path="/cart" component={ShoppingCart} />
-        <Route path="/checkout" component={CheckoutPage} />
-      </Switch>
+      <Layout>
+        <Switch>
+          <Route path="/" exact component={HomePage} />
+          <Route path="/login" component={LoginPage} />
+          <Route path="/cart" component={ShoppingCart} />
+          <Route path="/checkout" component={CheckoutPage} />
+        </Switch>
+      </Layout>
     </Router>
   );
 };
