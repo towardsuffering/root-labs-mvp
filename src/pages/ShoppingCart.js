@@ -23,7 +23,7 @@ const ShoppingCart = () => {
 
   return (
     <div>
-      <h1>Shopping Cart</h1>
+      <h1>Cats are cool 😎 </h1>
       {catPhotoUrl && <img src={catPhotoUrl} alt="Random Cat" style={{ width: '300px' }} />}
     </div>
   );
